@@ -1,0 +1,21 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .titulo { width: 60%;
+    padding:1rem;
+    background: deeppink;
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 2rem;
+
+
+  }
+  .imagenjs{
+      width: 70%;
+      margin-left: 15%;
+      margin-top: 2rem;
+    
+  }
