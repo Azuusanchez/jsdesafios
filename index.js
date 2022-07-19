@@ -12,18 +12,18 @@
     
 // incorporando array
 
-const clientes =  [
+ const clientes =  [
     {
         nombre : "Azucena" ,
         apellido: "Sanchez",
         edad : 22,
-        localidad: "Caseros"
+        ciudad: "Caseros"
     } ,
     {
         nombre : "Dora" ,
         apellido: "Gomez",
         edad : 44,
-        localidad: "Santos lugares"
+        ciudad: "Santos lugares"
     } ,
     {
         nombre : "Nestor" ,
@@ -35,15 +35,36 @@ const clientes =  [
         nombre : "Sebastian" ,
         apellido: "Lopez",
         edad : 24,
-        localidad: "Ituzaingo"
+        ciudad: "Ituzaingo"
     } ,
     {
         nombre : "Diamela" ,
         apellido: "Viera",
         edad : 20,
-        localidad:"Mercedes"
+        ciudad:"Mercedes"
     } ,
     
+]
+const clientesExtranjeros = [
+    {
+        nombre : "Maria" ,
+        apellido: "Sarmiento",
+        edad : 29,
+        ciudad: "Chile"
+    } ,
+    {
+        nombre : "Daniel" ,
+        apellido: "Gonzales",
+        edad : 40,
+        ciudad: "Perú"
+    } ,
+    {
+        nombre : "Noah" ,
+        apellido: "Sevilla",
+        edad : 19,
+        ciudad: "Brasil"
+    } 
+
 ]
 
 console.log (clientes[3]) ;
@@ -61,5 +82,7 @@ clientes.push({
 
 
     console.log (clientes);
+     const totalClientes = clientes.concat(clientesExtranjeros) ;
+     console.log (totalClientes)
 
 
