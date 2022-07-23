@@ -1,17 +1,5 @@
-// const bienvenido=(nombre, apellido) => {}
 
-// let nombre = prompt ("Ingrese su nombre");
-// let apellido = prompt ("Ingrese su apellido");
-
-// alert (`Bienvenido/a ${nombre} ${apellido} a mi pagina web`);
-// console.log (`Bienvenido/a ${nombre} ${apellido} a mi pagina web`);
-// for (let i = 0; i < nombre.length; i ++){
-    // console.log (nombre[i]);}
-
-
-    
-// incorporando array
-
+// clientes
  const clientes =  [
     {
         nombre : "Azucena" ,
@@ -28,7 +16,7 @@
     {
         nombre : "Nestor" ,
         apellido: "Mereles",
-        edad : 27,
+        edad : 17,
         localidad: "Mataderos"
     } ,
     {
@@ -43,6 +31,12 @@
         edad : 20,
         ciudad:"Mercedes"
     } ,
+    {
+        nombre : "Daniel" ,
+        apellido: "Martinez",
+        edad : 16,
+        ciudad:"Saenz peña"
+    } ,
     
 ]
 const clientesExtranjeros = [
@@ -55,13 +49,13 @@ const clientesExtranjeros = [
     {
         nombre : "Daniel" ,
         apellido: "Gonzales",
-        edad : 40,
+        edad : 17,
         ciudad: "Perú"
     } ,
     {
         nombre : "Noah" ,
         apellido: "Sevilla",
-        edad : 19,
+        edad : 16,
         ciudad: "Brasil"
     } 
 
@@ -82,7 +76,64 @@ clientes.push({
 
 
     console.log (clientes);
+    //clientes mayores de edad
+
      const totalClientes = clientes.concat(clientesExtranjeros) ;
-     console.log (totalClientes)
+     console.log (totalClientes);
 
 
+      const clientesMayorEdad = totalClientes.filter ((curr) => {
+          return curr.edad > 18
+      })
+      console.log(clientesMayorEdad);
+
+
+      //clientes menores de edad
+      const clientesMenorEdad = totalClientes.filter ((curr) => {
+        return curr.edad < 18
+    })
+    console.log(clientesMenorEdad);
+
+
+
+
+
+     //servicios de uñas de mi proyecto
+
+  const serviciosDisponibles = [ 
+      { servicio: 'Uñas Acrilicas' ,
+      precio : 2200},
+
+      {servicio: 'Soft Gel',
+      precio: 1900},
+
+      {servicio: 'Semipermanentes manos',
+      precio: 1200},
+      { servicio: 'Semipermanentes pies',
+      precio : 1000
+      },
+      { servicio: 'Semipermanentes manos y pies',
+      precio : 2000
+        
+      },
+      { servicio: 'Uñas Esculpidas',
+      precio : 2300
+        
+      },
+      
+  ]
+  console.log (serviciosDisponibles);
+  const resultado = serviciosDisponibles.filter((curr) => 
+  curr.servicio.includes ('Semipermanentes'));
+console.log ( resultado)
+
+// sube el precio de los servicios
+
+const preciosActualizados = serviciosDisponibles.map((curr) =>
+{
+    return {
+        servicio: curr.servicio,
+        precio: curr.precio * 1.10
+    }
+});
+console.log (preciosActualizados);
