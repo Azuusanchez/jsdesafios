@@ -1,4 +1,26 @@
 
+
+const registroDeClientes = [];
+
+
+let ingresarNombre = prompt ("Ingrese su Nombre");
+let ingresarApellido = prompt ("Ingrese su Apellido");
+let ingresarEdad = prompt ("Ingrese su edad");
+alert (`Bienvenid@, ${ingresarNombre} ${ingresarApellido} `)
+
+
+function clientesIngresados (nombre, apellido, edad){
+ this.nombre = nombre;
+ this.apellido = apellido;
+ this.edad = edad;
+}
+const cliente = new clientesIngresados (ingresarNombre, ingresarApellido, ingresarEdad);
+
+
+console.log (registroDeClientes.push (cliente));
+console.log (registroDeClientes);
+
+
 // clientes
  const clientes =  [
     {
